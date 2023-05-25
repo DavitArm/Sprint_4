@@ -3,6 +3,7 @@ from selenium import webdriver
 from faker import Faker
 import random as rd
 
+
 # добавлен фикстура browser
 @pytest.fixture(scope="function")
 def browser():
@@ -35,6 +36,6 @@ def address():
 @pytest.fixture()
 def phone():
     country_code = '+7'
-    digits = rd.randint(1000000000, 9999999999)
+    digits = rd.randint(1000000000,9999999999)
     tel_number = country_code + str(digits)
     return tel_number
