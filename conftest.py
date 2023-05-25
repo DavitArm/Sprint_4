@@ -4,6 +4,7 @@ from faker import Faker
 import random as rd
 
 
+# добавлен фикстура browser
 @pytest.fixture(scope="function")
 def browser():
     driver = webdriver.Firefox()
